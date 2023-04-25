@@ -1,0 +1,6 @@
+#!/bin/bash
+yum update -y
+sudo amazon-linux-extras install nginx1 -y
+systemctl start nginx.service
+systemctl enable nginx.service
+echo "AMUDALA-1" >> /usr/share/nginx/html/index.html
